@@ -1,0 +1,72 @@
+/* aboutus.css */
+
+.aboutus-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: rgb(47, 149, 240);
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Half of the viewport height */
+    font-size: 40px; /* Set font size */
+    text-align: center; /* Center text within div */
+    font-family:"customfont3";
+}
+
+.aboutus-container p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.left-image,
+.right-image {
+    width: 300px; /* Set the width of the images */
+    height: 300px; /* Set the height of the images */
+    margin: 0 10px; /* Add some margin around the images */
+}
+.text-container
+{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: rgb(218, 222, 226);
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Half of the viewport height */
+    font-size: 24px; /* Set font size */
+    text-align: center; /* Center text within div */
+}
+/* Your existing CSS */
+.text-container {
+    display: flex;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 20px;
+    font-family: "customfont3";
+    font-size: 20px;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+.title
+{
+    font-family:"customfont3";
+    font-size: 30px;
+   color:red;
+   font-weight: 900;
+}  
+/* In your CSS file */
+.custom-icon {
+    
+    color: red;
+  }
+  

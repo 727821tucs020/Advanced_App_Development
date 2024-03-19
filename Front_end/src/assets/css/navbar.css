@@ -1,0 +1,96 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: rgb(213, 234, 252);
+    color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.logo-image {
+    height: 4rem;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-family:"customfont3";
+    font-size: larger;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    margin-right: 1rem;
+    color: #1b0000;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; /* Added transition */
+}
+
+.nav-link::after { /* Changed from :hover to always display */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #bd2e1f;
+    transition: width 0.3s ease; /* Added transition */
+}
+
+.nav-link:hover::after, /* Changed from hover on ::after */
+.nav-link:focus::after { /* Added focus state */
+    width: 100%;
+}
+
+.active-nav-link {
+    color: #60a5fa;
+}
+
+.city-dropdown {
+    background-color: transparent; /* Set background color to transparent */
+    border: 2px solid black; /* Set border color to black */
+    border-radius: 15px;
+    padding: 0.50rem 2rem;
+    font-size: 0.875rem;
+    color: black; /* Set text color to black */
+    outline: none;
+    font-family: "customfont2";
+}
+
+.city-dropdown::after {
+    border-top-color: black; /* Set arrow color to black */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #d1d5db;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

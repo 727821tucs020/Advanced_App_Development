@@ -1,0 +1,54 @@
+/* dashboardcontent.css */
+.dashboard-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-card h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.dashboard-card .service-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-card .service-info .info {
+  text-align: center;
+}
+
+.dashboard-card .service-info .info h4 {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.dashboard-card .service-info .info span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.dashboard-card button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-card button:hover {
+  background-color: #0056b3;
+}

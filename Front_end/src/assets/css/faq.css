@@ -1,0 +1,32 @@
+/* faq.css */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "customfont3";
+    line-height: 1.6;
+  }
+  
+  .faq-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .faq-question {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .faq-question h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .faq-question p {
+    margin-bottom: 5px;
+    color: #777;
+    font-size: 16px;
+  }

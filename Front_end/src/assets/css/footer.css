@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body fills the viewport height */
+}
+
+.wrapper {
+    flex-grow: 1; /* Grow to fill remaining space */
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 2rem 0;
+    border-radius: 3px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 2rem;
+    font-family:"customfont3";
+ 
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.9rem;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #ff4500;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #ff4500;
+}
+
+.contact-link {
+    color: #ffffff; /* Change the color to white or any other color you prefer */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #ff4500; /* Change the hover color to orange-red or any other color you prefer */
+}
+
+.contact-info p {
+    margin-bottom: 1rem; 
+}
+.contact-info p:first-child {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+.footer-section p:not(:last-child) {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}

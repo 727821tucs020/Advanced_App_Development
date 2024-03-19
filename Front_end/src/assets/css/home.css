@@ -1,0 +1,177 @@
+
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 149, 240);
+  }
+  
+  .image-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .text-section {
+    flex: 1;
+  }
+    .white1
+    {
+        color: white;
+        font-family:"customfont3";
+        font-weight: bold;
+        font-size: 40px;
+        
+    }
+    .white2
+    {
+        color: white;
+        font-size: 25px;
+        font-family:"customfont3";
+      
+        
+    }
+    .black
+    {
+        color: black;
+      font-size: 25px;
+      font-family:"customfont3";
+    }
+    .fa-whatsapp {
+
+        color: rgb(37, 211, 102);
+      }
+      
+      .whatsapp-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-family: "customfont3", sans-serif;
+        font-size: 16px;
+        color: white;
+        background-color: #031003;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .whatsapp-button:hover {
+        background-color: #266f2d; 
+      }
+      
+      .whatsapp-button:focus {
+        outline: none; 
+      }
+      
+     
+      .whatsapp-button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      /* ********************************* */
+      .home-container1 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px; /* Adjust margin as needed */
+      }
+   
+      .text1-section {
+        flex: 60%; /* Set the width of the text section to 65% */
+        padding: 20px;
+        background-color: white;
+
+      }
+      .image1-section {
+        flex: 40%;
+        padding: 20px;
+        align-items: center;
+      }
+      .x1
+      {
+        color: rgb(47, 149, 240);
+        font-size: 45px;
+        font-family: "customfont3";
+      }
+      .x2
+      {
+         color:black;
+         font-size: 25px;
+         font-family: "customfont2";
+      }
+      .y1
+      {
+color: black;
+font-size: 30px;
+      }
+      .y2
+      {
+        color: black;
+        font-size: 30px;
+      }
+      .y3
+      {
+        color: black;
+        font-size: 30px;
+      }
+      .plus
+      {
+    color: orangered;
+      }
+      .stats {
+        display: flex;
+      }
+      
+      .stats div {
+        flex: 1;
+        text-align: center; /* Align content horizontally within each div */
+      }
+      
+      .stats h4 {
+        display: inline-block; /* Make the h4 elements behave like inline-block */
+        margin: 0; /* Remove default margin */
+      }
+/* ***************************** */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+   background-color: rgb(47, 149, 240);
+   color: white;
+}
+
+.section1, .section2 {
+  width: 45%; /* Adjust as needed */
+  font-family: "customfont3";
+  font-size: 20px;
+text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.jjj
+{
+  position: relative;
+  text-align: center;
+  color: rgb(240, 63, 47);
+  font-family: "customfont3";
+  
+
+
+}
