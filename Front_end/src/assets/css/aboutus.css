@@ -6,7 +6,7 @@
     justify-content: center; /* Center horizontally */
     background-color: rgb(47, 149, 240);
     width: 100vw; /* Full viewport width */
-    height: 100vh; /* Half of the viewport height */
+    height: 75vh; /* Half of the viewport height */
     font-size: 40px; /* Set font size */
     text-align: center; /* Center text within div */
     font-family:"customfont3";

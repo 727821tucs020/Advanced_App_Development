@@ -2,7 +2,7 @@ import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import '../../src/assets/css/chart.css';
 
-const Chat = () => {
+const Chart = () => {
     const options = {
         chart: {
             type: 'bar',
@@ -34,22 +34,23 @@ const Chat = () => {
         tooltip: {
             y: {
                 formatter: function (val) {
-                    return "$ " + val + "k"
+                    return "" + val + ""
                 }
             }
         }
     };
 
     const series = [{
-        name: 'Sales',
+        name: 'Helpees',
         data: [30, 40, 45, 50, 49, 60, 70, 91, 125, 100, 120, 150]
     }];
 
     return (
         <div className="chart-container">
+            <a href="/sidebar" className="back-buttonx">Back</a>
             <ReactApexChart options={options} series={series} type="bar" height={350} />
         </div>
     );
 }
 
-export default Chat;
+export default Chart;

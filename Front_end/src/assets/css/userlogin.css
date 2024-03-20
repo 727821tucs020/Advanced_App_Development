@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center center;
     z-index: 0;
+    
   }
   
   .container-unique {
@@ -16,6 +17,8 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    
+    
   }
   
   .form-box-unique {
@@ -27,6 +30,7 @@
     padding: 5px;
     overflow: hidden;
     border: 1px solid black;
+    
   }
   
   .image-container-unique {
@@ -118,6 +122,7 @@
     border: 0;
     outline: none;
     border-radius: 30px;
+     margin-top: 50px;
   }
   
   .submit-btn1-unique {

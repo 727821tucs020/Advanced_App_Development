@@ -9,7 +9,8 @@ function Navbar() {
         { name: 'Register', path: '/userlogin' },
         { name: 'About us ', path: '/aboutus' },
         { name: 'Contact us', path: '/contact' },
-        { name: 'dashboard', path: '/sidebar' }
+    
+       
         
         
         

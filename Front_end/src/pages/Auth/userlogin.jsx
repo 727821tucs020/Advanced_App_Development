@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import '../../../src/assets/css/userlogin.css';
 import Welcome from "../../../src/assets/images/loginimage.jpg"
 
 const UserLogin = () => {
-  const navigate = useNavigate(); // Initialize navigate
-  const [name, setName] = useState('');
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleReg = () => {
     var x = document.getElementById('loginUnique');
@@ -41,11 +39,6 @@ const UserLogin = () => {
       return false;
     }
 
-    if (password !== confirmPassword) {
-      alert('Passwords do not match.');
-      return false;
-    }
-
     return true;
   };
 
@@ -60,19 +53,18 @@ const UserLogin = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    if (validateInputs()) {
-      // You can add your registration logic here
-      console.log('Registration details:', { name, email, password, confirmPassword });
-      login(); // Redirect to login after registration
-      navigate('/'); // Redirect to homepage
-    }
+    // Your registration logic goes here
+    navigate('/');
   };
 
   const handleLogin = (e) => {
     e.preventDefault();
     // Your login logic goes here
-    // After successful login, navigate to homepage
-    navigate('/');
+    if (email === 'admin@gmail.com' && password === '12345') {
+      navigate('/sidebar');
+    } else {
+      navigate('/');
+    }
   };
 
   return (
@@ -88,18 +80,13 @@ const UserLogin = () => {
               Register
             </button>
           </div>
-          <div className="social-icons-unique">
-            <img src="https://res.cloudinary.com/duaotkbof/image/upload/v1708361256/wsvlujjfjbvjtvx9uhfz.png" alt="icon"></img>
-            <img src="https://res.cloudinary.com/duaotkbof/image/upload/v1708361354/u6mzmxqq9n47oewrqs27.jpg" alt="icon"></img>
-            <img src="https://res.cloudinary.com/duaotkbof/image/upload/v1708361390/ynjxe3yuji1fvsf0aded.png" alt="icon"></img>
-          </div>
           <form id="loginUnique" className="input-group-unique" onSubmit={handleLogin}>
             <input
               type="text"
               className="input-field-unique"
-              placeholder="Name"
+              placeholder="Email"
               required
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
@@ -108,16 +95,12 @@ const UserLogin = () => {
               required
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div className="abc-unique">
-              <input type="checkbox" className="chech-box-unique" />
-              <span>Remember Password</span>
-            </div>
             <button type="submit" className="submit-btn-unique">
               Login
             </button>
           </form>
           <form id="registerUnique" className="input-group-unique" onSubmit={handleRegister}>
-            <input type="text" className="input-field-unique" placeholder="Name" required onChange={(e) => setName(e.target.value)} />
+            <input type="text" className="input-field-unique" placeholder="Name" required />
             <input
               type="text"
               className="input-field-unique"
@@ -125,20 +108,14 @@ const UserLogin = () => {
               required
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               title="Enter a valid email address"
-              onChange={(e) => setEmail(e.target.value)}
             />
-            <input type="password" className="input-field-unique" placeholder="Enter Password" required onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" className="input-field-unique" placeholder="Enter Password" required />
             <input
               type="password"
               className="input-field-unique"
               placeholder="Confirm Password"
               required
-              onChange={(e) => setConfirmPassword(e.target.value)}
             />
-            <div className="abc-unique">
-              <input type="checkbox" className="chech-box-unique" />
-              <span>I agree</span>
-            </div>
             <button type="submit" className="submit-btn-unique">
               Register
             </button>

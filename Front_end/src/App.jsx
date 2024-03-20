@@ -16,6 +16,10 @@ import UserLogin from './pages/Auth/userlogin'
 import Terms from './pages/terms';
 import Faq from './pages/faq'
 import Chat from './pages/chart'
+import Employee from './pages/employee'
+import Booking from './pages/booking'
+import Payment from './pages/payment'
+import Services from './pages/services'
 const App = () => {
   return (
 <>
@@ -30,14 +34,27 @@ const App = () => {
        <Route path='/aboutus' element={<Aboutus/>}/>
        <Route path='/terms'element={<Terms/>}/>
        <Route path='/faq'element={<Faq/>}/>
+       <Route path='/book'element={<Booking/>}/>
+       <Route path='/service'element={<Services/>}/>
        </Route>
+       {/* ******************************************** */}
        <Route element={<WebLayout1/>}>
-        
-       </Route>
+       <Route path='/ap'element={<Chat/>}/>
+       <Route path='/employee'element={<Employee/>}/>
        <Route path='/dashboard1' element={<Dashboardcontent/>}/>
+       <Route path='/userlogin'element={<UserLogin/>}/>
+     
+       <Route path='/pay'element={<Payment/>}/>
+     
+       </Route>
+      
        <Route path='/sidebar'element={<AdminDashboard/>}/>
        <Route path='/userlogin'element={<UserLogin/>}/>
-       <Route path='/ap'element={<Chat/>}/>
+
+   
+
+      
+      
   
     </Routes>
     </Suspense>

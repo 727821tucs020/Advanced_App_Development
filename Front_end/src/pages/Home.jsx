@@ -19,7 +19,10 @@ function Home() {
             <li>✓ Background Check Documents on every Profile</li>
             <li>✓ Trained for Exceptional Quality of Service</li>
             <div className="whatsapp-button-container">
-              <button className="whatsapp-button"> <i className="fab fa-whatsapp fa-2x"></i> WhatsApp us</button>
+            <a href="https://web.whatsapp.com/" className="whatsapp-button">   
+  <i className="fab fa-whatsapp fa-2x"></i> WhatsApp us
+</a>
+
             </div>
           </ul>
         </div>
@@ -63,6 +66,12 @@ function Home() {
       <li>Caretakers for seniors at-home</li>
       <li>Hospital Attenders - 5, 10 & 24 Hours</li>
     </ul>
+ <button class="book-button">
+  <a href="/service" class="book">
+    know more
+  </a>
+</button>
+
   </div>
 </div>
 
